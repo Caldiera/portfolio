@@ -28,7 +28,8 @@
 
 <!-- Hero -->
 <section class="hero">
-	<SlidingText text="Alex Carter" />
+	<SlidingText text="Brandon" direction="left" startScroll={100} scrollDuration={600} />
+	<SlidingText text="Marques" direction="right" startScroll={100} scrollDuration={600} />
 	<p class="tagline">I build software and experiments.</p>
 	<a href="/projects" class="cta">View Projects</a>
 </section>

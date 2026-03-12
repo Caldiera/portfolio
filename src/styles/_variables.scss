@@ -1,27 +1,29 @@
-// Colors
-$color-text: #1a1a1a;
-$color-text-muted: #6b7280;
-$color-text-dark: #111827;
-$color-text-mid: #4b5563;
-$color-text-sub: #374151;
-$color-border: #e5e7eb;
-$color-border-light: #f3f4f6;
-$color-primary: #3b82f6;
-$color-primary-dark: #2563eb;
+// Colors — light, warm, eva.town-inspired
+$color-bg: #faf8f4;
+$color-text: #111111;
+$color-text-muted: #888888;
+$color-text-mid: #444444;
+$color-text-dark: #111111;
+$color-border: #e0dbd0;
+$color-border-light: #ede9e2;
+$color-accent: #c0392b;
+$color-accent-dark: #96281b;
+$color-primary: #c0392b;
+$color-primary-dark: #96281b;
 $color-white: #ffffff;
 
 // Layout
-$max-width: 1100px;
+$max-width: 720px;
 $padding-x: 1.5rem;
-$padding-y: 2rem;
+$padding-y: 2.5rem;
 
 // Typography
 $font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
 
 // Radii
-$radius-sm: 0.4rem;
-$radius-md: 0.5rem;
-$radius-lg: 0.75rem;
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 10px;
 
 // Transitions
-$transition-fast: 0.2s;
+$transition-fast: 0.15s ease;
