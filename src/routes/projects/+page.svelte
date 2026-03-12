@@ -49,16 +49,18 @@
 	</div>
 </section>
 
-<style>
+<style lang="scss">
+	@use '../../styles/variables' as *;
+
 	h1 {
 		font-size: clamp(1.75rem, 4vw, 2.5rem);
-		color: #111827;
+		color: $color-text-dark;
 		margin-bottom: 0.5rem;
 	}
 
 	.subtitle {
-		color: #6b7280;
-		margin-bottom: 2rem;
+		color: $color-text-muted;
+		margin-bottom: $padding-y;
 	}
 
 	.grid {

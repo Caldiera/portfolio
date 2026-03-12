@@ -1,0 +1,35 @@
+@use 'styles/variables' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-stack;
+	line-height: 1.6;
+	color: $color-text;
+	background-color: $color-white;
+}
+
+main {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: $padding-y $padding-x;
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+h1, h2, h3 {
+	line-height: 1.2;
+}

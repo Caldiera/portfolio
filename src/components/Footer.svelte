@@ -8,30 +8,32 @@
 	const year = new Date().getFullYear();
 </script>
 
-<style>
+<style lang="scss">
+	@use '../styles/variables' as *;
+
 	footer {
 		text-align: center;
-		padding: 2rem 1.5rem;
-		border-top: 1px solid #e5e7eb;
+		padding: $padding-y $padding-x;
+		border-top: 1px solid $color-border;
 		font-size: 0.875rem;
-		color: #6b7280;
+		color: $color-text-muted;
 		display: flex;
 		flex-direction: column;
 		gap: 0.35rem;
 		align-items: center;
+
+		a {
+			color: $color-text-muted;
+			font-size: 0.8rem;
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
 	}
 
 	.name {
 		font-weight: 600;
-		color: #374151;
-	}
-
-	footer a {
-		color: #6b7280;
-		font-size: 0.8rem;
-	}
-
-	footer a:hover {
-		color: #3b82f6;
+		color: $color-text-sub;
 	}
 </style>

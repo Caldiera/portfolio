@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css';
+	import '../app.scss';
 	import Navbar from '../components/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
 
@@ -12,7 +12,7 @@
 </main>
 <Footer />
 
-<style>
+<style lang="scss">
 	main {
 		min-height: calc(100vh - 120px);
 	}

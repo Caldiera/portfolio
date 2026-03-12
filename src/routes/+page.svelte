@@ -52,68 +52,70 @@
 	</div>
 </section>
 
-<style>
+<style lang="scss">
+	@use '../styles/variables' as *;
+
 	.hero {
 		padding: 4rem 0 3rem;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-	}
 
-	.hero h1 {
-		font-size: clamp(2rem, 5vw, 3rem);
-		color: #111827;
+		h1 {
+			font-size: clamp(2rem, 5vw, 3rem);
+			color: $color-text-dark;
+		}
 	}
 
 	.tagline {
 		font-size: 1.2rem;
-		color: #6b7280;
+		color: $color-text-muted;
 	}
 
 	.cta {
 		display: inline-block;
 		margin-top: 0.5rem;
 		padding: 0.65rem 1.5rem;
-		background: #3b82f6;
-		color: #ffffff;
-		border-radius: 0.5rem;
+		background: $color-primary;
+		color: $color-white;
+		border-radius: $radius-md;
 		font-size: 1rem;
 		text-decoration: none;
 		align-self: flex-start;
-		transition: background 0.2s;
-	}
+		transition: background $transition-fast;
 
-	.cta:hover {
-		background: #2563eb;
-		text-decoration: none;
+		&:hover {
+			background: $color-primary-dark;
+			text-decoration: none;
+		}
 	}
 
 	.about {
-		padding: 2rem 0;
-		border-top: 1px solid #f3f4f6;
-	}
+		padding: $padding-y 0;
+		border-top: 1px solid $color-border-light;
 
-	.about h2 {
-		font-size: 1.5rem;
-		margin-bottom: 1rem;
-		color: #111827;
-	}
+		h2 {
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+			color: $color-text-dark;
+		}
 
-	.about p {
-		color: #4b5563;
-		max-width: 65ch;
-		line-height: 1.75;
+		p {
+			color: $color-text-mid;
+			max-width: 65ch;
+			line-height: 1.75;
+		}
 	}
 
 	.featured {
-		padding: 2rem 0;
-		border-top: 1px solid #f3f4f6;
-	}
+		padding: $padding-y 0;
+		border-top: 1px solid $color-border-light;
 
-	.featured h2 {
-		font-size: 1.5rem;
-		margin-bottom: 1.5rem;
-		color: #111827;
+		h2 {
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
+			color: $color-text-dark;
+		}
 	}
 
 	.grid {

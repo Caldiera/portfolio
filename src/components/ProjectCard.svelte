@@ -14,47 +14,49 @@
 	<a href={link} target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
 </div>
 
-<style>
+<style lang="scss">
+	@use '../styles/variables' as *;
+
 	.card {
-		border: 1px solid #e5e7eb;
-		border-radius: 0.75rem;
+		border: 1px solid $color-border;
+		border-radius: $radius-lg;
 		padding: 1.5rem;
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
-		transition: box-shadow 0.2s, transform 0.2s;
-	}
+		transition: box-shadow $transition-fast, transform $transition-fast;
 
-	.card:hover {
-		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		transform: translateY(-2px);
-	}
+		&:hover {
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+			transform: translateY(-2px);
+		}
 
-	h3 {
-		font-size: 1.1rem;
-		color: #111827;
-	}
+		h3 {
+			font-size: 1.1rem;
+			color: $color-text-dark;
+		}
 
-	p {
-		font-size: 0.9rem;
-		color: #6b7280;
-		flex: 1;
+		p {
+			font-size: 0.9rem;
+			color: $color-text-muted;
+			flex: 1;
+		}
 	}
 
 	.btn {
 		display: inline-block;
 		padding: 0.45rem 1rem;
-		background: #3b82f6;
-		color: #ffffff;
-		border-radius: 0.4rem;
+		background: $color-primary;
+		color: $color-white;
+		border-radius: $radius-sm;
 		font-size: 0.875rem;
 		text-decoration: none;
 		align-self: flex-start;
-		transition: background 0.2s;
-	}
+		transition: background $transition-fast;
 
-	.btn:hover {
-		background: #2563eb;
-		text-decoration: none;
+		&:hover {
+			background: $color-primary-dark;
+			text-decoration: none;
+		}
 	}
 </style>
