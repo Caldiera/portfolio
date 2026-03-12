@@ -1,8 +1,9 @@
 {
-	"permissions": {
-		"allow": [
-			"Bash(cd C:/dev/portfolio && npm run build 2>&1 | tail -20)",
-			"Bash(cd C:/dev/portfolio && npm install -D sass 2>&1 | tail -5)"
-		]
-	}
+  "permissions": {
+    "allow": [
+      "Bash(cd C:/dev/portfolio && npm run build 2>&1 | tail -20)",
+      "Bash(cd C:/dev/portfolio && npm install -D sass 2>&1 | tail -5)",
+      "WebFetch(domain:eva.town)"
+    ]
+  }
 }
