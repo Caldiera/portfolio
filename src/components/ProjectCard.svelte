@@ -18,27 +18,38 @@
 	@use '../styles/variables' as *;
 
 	.card {
-		border: 1px solid $color-border;
-		border-radius: $radius-lg;
+		background: rgba(255, 255, 255, 0.04);
+		border-radius: 16px;
+		box-shadow:
+			0 4px 30px rgba(0, 0, 0, 0.1),
+			inset 0 1px 0 rgba(255, 255, 255, 0.2),
+			inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(7.7px);
 		padding: 1.5rem;
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
-		transition: box-shadow $transition-fast, transform $transition-fast;
+		transition:
+			box-shadow $transition-fast,
+			transform $transition-fast;
 
 		&:hover {
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+			box-shadow:
+				0 4px 24px rgba(0, 0, 0, 0.2),
+				inset 0 1px 0 rgba(255, 255, 255, 0.2),
+				inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 			transform: translateY(-2px);
 		}
 
 		h3 {
 			font-size: 1.1rem;
-			color: $color-text-dark;
+			color: #ffffff;
 		}
 
 		p {
 			font-size: 0.9rem;
-			color: $color-text-muted;
+			color: rgba(255, 255, 255, 0.75);
 			flex: 1;
 		}
 	}

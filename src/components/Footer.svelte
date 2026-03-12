@@ -1,12 +1,12 @@
+<script lang="ts">
+	const year = new Date().getFullYear();
+</script>
+
 <footer>
 	<p class="name">Alex Carter</p>
 	<p class="copy">&copy; {year} All rights reserved.</p>
 	<a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
 </footer>
-
-<script lang="ts">
-	const year = new Date().getFullYear();
-</script>
 
 <style lang="scss">
 	@use '../styles/variables' as *;

@@ -14,7 +14,8 @@
 		},
 		{
 			title: 'Markdown Blog',
-			description: 'A statically generated blog that renders markdown files with syntax highlighting.',
+			description:
+				'A statically generated blog that renders markdown files with syntax highlighting.',
 			link: '#'
 		}
 	];
@@ -35,10 +36,10 @@
 <section class="about">
 	<h2>About Me</h2>
 	<p>
-		I'm a full-stack developer with a passion for building clean, performant web applications.
-		I work primarily with TypeScript, SvelteKit, and Node.js, and I enjoy exploring everything
-		from developer tooling to data visualization. I focus on writing maintainable code and
-		shipping things that actually work.
+		I'm a full-stack developer with a passion for building clean, performant web applications. I
+		work primarily with TypeScript, SvelteKit, and Node.js, and I enjoy exploring everything from
+		developer tooling to data visualization. I focus on writing maintainable code and shipping
+		things that actually work.
 	</p>
 </section>
 

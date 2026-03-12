@@ -14,7 +14,8 @@
 		},
 		{
 			title: 'Markdown Blog',
-			description: 'A statically generated blog that renders markdown files with syntax highlighting.',
+			description:
+				'A statically generated blog that renders markdown files with syntax highlighting.',
 			link: '#'
 		},
 		{
