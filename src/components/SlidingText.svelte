@@ -40,5 +40,6 @@
 		letter-spacing: -0.02em;
 		will-change: transform;
 		white-space: nowrap;
+		margin-left: -1.2rem;
 	}
 </style>
