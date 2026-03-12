@@ -1,4 +1,5 @@
 <script lang="ts">
+	import FrostedBackground from '../components/FrostedBackground.svelte';
 	import ProjectCard from '../components/ProjectCard.svelte';
 	import SlidingText from '../components/SlidingText.svelte';
 
@@ -30,7 +31,14 @@
 <section class="hero">
 	<SlidingText text="Brandon" direction="left" startScroll={100} scrollDuration={600} />
 	<SlidingText text="Marques" direction="right" startScroll={100} scrollDuration={600} />
-	<p class="tagline">I build software and experiments.</p>
+	<FrostedBackground>
+		<p class="tagline">
+			Software developer with experience in fast-paced design environments. I build things across
+			the stack — from machine learning systems in Python to frontend interfaces in React. With a
+			background in Mechanical Engineering, I'm especially interested in projects where software,
+			design, and hardware come together.
+		</p>
+	</FrostedBackground>
 	<a href="/projects" class="cta">View Projects</a>
 </section>
 
