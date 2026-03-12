@@ -29,21 +29,30 @@
 
 <!-- Hero -->
 <section class="hero">
-	<SlidingText text="Brandon" direction="left" startScroll={100} scrollDuration={600} />
-	<SlidingText text="Marques" direction="right" startScroll={100} scrollDuration={600} />
-	<FrostedBackground>
-		<p class="tagline">
-			Software developer with experience in fast-paced design environments. I build things across
-			the stack — from machine learning systems in Python to frontend interfaces in React. With a
-			background in Mechanical Engineering, I'm especially interested in projects where software,
-			design, and hardware come together.
-		</p>
-	</FrostedBackground>
-	<a href="/projects" class="cta">View Projects</a>
+	<div class="big-name-wrapper">
+		<SlidingText text="Hi, I'm" direction="right" exitTrigger={200} scrollDuration={1000} />
+		<SlidingText text="Brandon" direction="left" exitTrigger={300} scrollDuration={1000} />
+	</div>
 </section>
 
 <!-- About -->
 <section class="about">
+	<FrostedBackground>
+		<p class="tagline">
+			I'm a software developer with experience in fast-paced design environments. I build things
+			across the stack.from machine learning systems in Python to frontend interfaces in React. With
+			a background in Mechanical Engineering, I'm especially interested in projects where software,
+			design, and hardware come together.
+		</p>
+	</FrostedBackground>
+	<FrostedBackground>
+		<p class="tagline">
+			I'm a software developer with experience in fast-paced design environments. I build things
+			across the stack.from machine learning systems in Python to frontend interfaces in React. With
+			a background in Mechanical Engineering, I'm especially interested in projects where software,
+			design, and hardware come together.
+		</p>
+	</FrostedBackground>
 	<h2>About Me</h2>
 	<p>
 		I'm a full-stack developer with a passion for building clean, performant web applications. I
@@ -71,7 +80,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		height: 100vh;
+		height: 80vh;
+	}
+	.big-name-wrapper {
+		margin-bottom: 10rem;
 	}
 
 	.tagline {
@@ -111,6 +123,10 @@
 			color: $color-text-mid;
 			max-width: 65ch;
 			line-height: 1.75;
+		}
+
+		& > :global(*) {
+			margin-bottom: 2rem;
 		}
 	}
 

@@ -3,25 +3,47 @@
 
 	interface Props {
 		text: string;
-		startScroll?: number;
+		exitTrigger?: number;
+		returnTrigger?: number;
 		scrollDuration?: number;
 		direction?: 'left' | 'right';
 	}
 
-	let { text, startScroll = 0, scrollDuration = 400, direction = 'left' }: Props = $props();
+	let {
+		text,
+		exitTrigger = 0,
+		returnTrigger,
+		scrollDuration = 800,
+		direction = 'left'
+	}: Props = $props();
 
 	let translateX = $state(0);
 
 	onMount(() => {
-		function onScroll() {
-			const progress = Math.max(0, Math.min(1, (window.scrollY - startScroll) / scrollDuration));
-			translateX = (direction === 'left' ? -1 : 1) * progress * 100;
+		let current = 0;
+		let target = 0;
+		let rafId: number;
+		const offScreen = (direction === 'left' ? -1 : 1) * 100;
+		const lerp = 1 - Math.pow(0.05, 16 / scrollDuration);
+
+		function tick() {
+			const scrollY = window.scrollY;
+
+			if (scrollY >= exitTrigger) {
+				target = offScreen;
+			} else if (returnTrigger === undefined || scrollY < returnTrigger) {
+				target = 0;
+			}
+
+			const activeLerp = target === offScreen ? lerp * 0.3 : lerp;
+			current += (target - current) * activeLerp;
+			translateX = current;
+			rafId = requestAnimationFrame(tick);
 		}
 
-		window.addEventListener('scroll', onScroll, { passive: true });
-		onScroll();
+		rafId = requestAnimationFrame(tick);
 
-		return () => window.removeEventListener('scroll', onScroll);
+		return () => cancelAnimationFrame(rafId);
 	});
 </script>
 
@@ -32,6 +54,14 @@
 <style lang="scss">
 	@use '../styles/variables' as *;
 
+	.wrapper {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		text-align: center;
+	}
+
 	h1 {
 		font-size: clamp(6rem, 20vw, 15rem);
 		color: $color-text;
@@ -40,6 +70,6 @@
 		letter-spacing: -0.02em;
 		will-change: transform;
 		white-space: nowrap;
-		margin-left: -1.2rem;
+		display: inline-block;
 	}
 </style>
