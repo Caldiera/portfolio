@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ProjectCard from '../components/ProjectCard.svelte';
+	import SlidingText from '../components/SlidingText.svelte';
 
 	const featured = [
 		{
@@ -27,7 +28,7 @@
 
 <!-- Hero -->
 <section class="hero">
-	<h1>Hi, I'm Alex Carter</h1>
+	<SlidingText text="Alex Carter" />
 	<p class="tagline">I build software and experiments.</p>
 	<a href="/projects" class="cta">View Projects</a>
 </section>
@@ -61,11 +62,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-
-		h1 {
-			font-size: clamp(2rem, 5vw, 3rem);
-			color: $color-text-dark;
-		}
+		height: 100vh;
 	}
 
 	.tagline {
