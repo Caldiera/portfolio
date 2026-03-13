@@ -4,6 +4,7 @@ declare const colors: {
 	frostedMedium: string;
 	frostedDark: string;
 	frostedVeryDark: string;
+	frostedVeryDarkGray: string;
 };
 
 export default colors;

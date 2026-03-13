@@ -6,9 +6,10 @@
 
 	const featured = [
 		{
-			title: 'Weather Dashboard',
-			description: 'A real-time weather app built with SvelteKit and the OpenWeather API.',
-			link: '#'
+			title: 'Block Zero Presentation Engine',
+			description:
+				'I performed regular improvements and built entire apps based on the platform. Tying the physical and digital worlds together.',
+			link: 'https://blockzero.se/presentation-engine/'
 		},
 		{
 			title: 'Task Manager',
@@ -39,7 +40,7 @@
 <!-- About -->
 
 <section class="about">
-	<FrostedBackground background={colors.frostedDark}>
+	<FrostedBackground background={colors.frostedVeryDarkGray}>
 		<h2>About Me</h2>
 		<p class="tagline">
 			I'm a software developer with experience in fast-paced design environments. I build things
