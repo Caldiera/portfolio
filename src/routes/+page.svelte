@@ -1,8 +1,8 @@
 <script lang="ts">
-	import FrostedBackground from '../components/FrostedBackground.svelte';
-	import ProjectCard from '../components/ProjectCard.svelte';
-	import SlidingText from '../components/SlidingText.svelte';
-	import colors from '../styles/_variables.module.scss';
+	import FrostedBackground from '$components/FrostedBackground.svelte';
+	import ProjectCard from '$components/ProjectCard.svelte';
+	import SlidingText from '$components/SlidingText.svelte';
+	import colors from '$styles/_variables.module.scss';
 
 	const featured = [
 		{

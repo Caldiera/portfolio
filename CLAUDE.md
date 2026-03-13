@@ -50,7 +50,7 @@ src/
 - `src/app.scss` is for global resets and base typography only — no component styles.
 - Do not use any CSS framework or utility library.
 - Responsive layouts use CSS Grid with `auto-fill` / `minmax`.
-- SCSS variables are imported in component style blocks with `@use '../styles/variables' as *;`.
+- SCSS variables are imported in component style blocks with `@use '../styles/variables' as *;`. Use relative paths here — Vite aliases (`$styles`, etc.) do not work in SCSS `@use` statements.
 
 ## SCSS Variables in TypeScript
 

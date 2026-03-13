@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FrostedBackground from './FrostedBackground.svelte';
-	import colors from '../styles/_variables.module.scss';
+	import colors from '$styles/_variables.module.scss';
 
 	interface Props {
 		title: string;
@@ -15,7 +15,9 @@
 	<div class="card">
 		<h3>{title}</h3>
 		<p>{description}</p>
-		<a href={link} target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
+		<FrostedBackground background={colors.frostedDark}>
+			<a href={link} class="btn">View Project</a>
+		</FrostedBackground>
 	</div>
 </FrostedBackground>
 

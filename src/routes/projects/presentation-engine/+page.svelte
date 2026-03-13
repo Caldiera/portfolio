@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FrostedBackground from '$components/FrostedBackground.svelte';
-	import colors from '../styles/_variables.module.scss';
+	import colors from '$styles/_variables.module.scss';
 </script>
 
 <section class="about">
