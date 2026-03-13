@@ -10,7 +10,7 @@
 	let { title, description, link }: Props = $props();
 </script>
 
-<FrostedBackground>
+<FrostedBackground background="rgba(0, 0, 0, 0.25)">
 	<div class="card">
 		<h3>{title}</h3>
 		<p>{description}</p>

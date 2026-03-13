@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-	<title>Alex Carter — Portfolio</title>
+	<title>Brandon Marques Portfolio</title>
 </svelte:head>
 
 <!-- Hero -->
@@ -36,30 +36,20 @@
 </section>
 
 <!-- About -->
+
 <section class="about">
-	<FrostedBackground>
+	<FrostedBackground background="rgba(0, 0, 0, 0.7)">
+		<h2>About Me</h2>
 		<p class="tagline">
 			I'm a software developer with experience in fast-paced design environments. I build things
-			across the stack.from machine learning systems in Python to frontend interfaces in React. With
-			a background in Mechanical Engineering, I'm especially interested in projects where software,
-			design, and hardware come together.
+			across the stack, from machine learning systems in Python to frontend interfaces in React.
 		</p>
-	</FrostedBackground>
-	<FrostedBackground>
+
 		<p class="tagline">
-			I'm a software developer with experience in fast-paced design environments. I build things
-			across the stack.from machine learning systems in Python to frontend interfaces in React. With
-			a background in Mechanical Engineering, I'm especially interested in projects where software,
-			design, and hardware come together.
+			With a background in Mechanical Engineering, I'm especially interested in projects where
+			software, design, and hardware come together.
 		</p>
 	</FrostedBackground>
-	<h2>About Me</h2>
-	<p>
-		I'm a full-stack developer with a passion for building clean, performant web applications. I
-		work primarily with TypeScript, SvelteKit, and Node.js, and I enjoy exploring everything from
-		developer tooling to data visualization. I focus on writing maintainable code and shipping
-		things that actually work.
-	</p>
 </section>
 
 <!-- Featured Projects -->
@@ -110,9 +100,6 @@
 	}
 
 	.about {
-		padding: $padding-y 0;
-		border-top: 1px solid $color-border-light;
-
 		h2 {
 			font-size: 1.5rem;
 			margin-bottom: 1rem;
@@ -133,9 +120,10 @@
 	.featured {
 		padding: $padding-y 0;
 		border-top: 1px solid $color-border-light;
+		margin: 5rem 0;
 
 		h2 {
-			font-size: 1.5rem;
+			font-size: 3rem;
 			margin-bottom: 1.5rem;
 			color: $color-text-dark;
 		}

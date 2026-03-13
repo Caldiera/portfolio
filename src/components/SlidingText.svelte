@@ -65,7 +65,7 @@
 	h1 {
 		font-size: clamp(6rem, 20vw, 15rem);
 		color: $color-text;
-		font-weight: normal;
+		font-weight: bold;
 		line-height: 1;
 		letter-spacing: -0.02em;
 		will-change: transform;

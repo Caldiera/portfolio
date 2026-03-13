@@ -3,12 +3,13 @@
 
 	interface Props {
 		children: Snippet;
+		background?: string;
 	}
 
-	let { children }: Props = $props();
+	let { children, background = 'rgba(0, 0, 0, 0.05)' }: Props = $props();
 </script>
 
-<div class="frosted">
+<div class="frosted" style="background: {background};">
 	{@render children()}
 </div>
 
@@ -16,7 +17,6 @@
 	@use '../styles/variables' as *;
 
 	.frosted {
-		background: rgba(255, 255, 255, 0.04);
 		border-radius: 16px;
 		box-shadow:
 			0 4px 30px rgba(0, 0, 0, 0.1),
