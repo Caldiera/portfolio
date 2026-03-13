@@ -3,41 +3,35 @@
 
 	const projects = [
 		{
-			title: 'Weather Dashboard',
-			description: 'A real-time weather app built with SvelteKit and the OpenWeather API.',
-			link: '#'
+			title: 'Presentation Engine',
+			description: '',
+			link: '/projects/presentation-engine'
 		},
 		{
-			title: 'Task Manager',
-			description: 'A full-stack task management tool with auth, drag-and-drop, and team support.',
-			link: '#'
+			title: 'Ectocloud',
+			description: '',
+			link: '/projects/ectocloud'
 		},
 		{
-			title: 'Markdown Blog',
-			description:
-				'A statically generated blog that renders markdown files with syntax highlighting.',
-			link: '#'
+			title: 'Canadian Telecom',
+			description: '',
+			link: '/projects/canadian-telecom'
 		},
 		{
-			title: 'CLI Budget Tracker',
-			description: 'A command-line tool for tracking personal finances written in Go.',
-			link: '#'
+			title: 'On the Side',
+			description: '',
+			link: '/projects/on-the-side'
 		},
 		{
-			title: 'URL Shortener',
-			description: 'A self-hosted URL shortener with analytics built on Redis and Node.js.',
-			link: '#'
-		},
-		{
-			title: 'Dev Portfolio',
-			description: 'This portfolio site, built with SvelteKit and TypeScript.',
-			link: '#'
+			title: 'Google',
+			description: '',
+			link: '/projects/google'
 		}
 	];
 </script>
 
 <svelte:head>
-	<title>Projects — Alex Carter</title>
+	<title>Projects — Brandon Marques</title>
 </svelte:head>
 
 <section>
