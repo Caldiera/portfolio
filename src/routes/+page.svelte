@@ -2,6 +2,7 @@
 	import FrostedBackground from '../components/FrostedBackground.svelte';
 	import ProjectCard from '../components/ProjectCard.svelte';
 	import SlidingText from '../components/SlidingText.svelte';
+	import colors from '../styles/_variables.module.scss';
 
 	const featured = [
 		{
@@ -38,7 +39,7 @@
 <!-- About -->
 
 <section class="about">
-	<FrostedBackground background="rgba(0, 0, 0, 0.7)">
+	<FrostedBackground background={colors.frostedDark}>
 		<h2>About Me</h2>
 		<p class="tagline">
 			I'm a software developer with experience in fast-paced design environments. I build things

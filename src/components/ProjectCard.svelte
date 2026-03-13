@@ -1,5 +1,6 @@
 <script lang="ts">
 	import FrostedBackground from './FrostedBackground.svelte';
+	import colors from '../styles/_variables.module.scss';
 
 	interface Props {
 		title: string;
@@ -10,7 +11,7 @@
 	let { title, description, link }: Props = $props();
 </script>
 
-<FrostedBackground background="rgba(0, 0, 0, 0.25)">
+<FrostedBackground background={colors.frostedMedium}>
 	<div class="card">
 		<h3>{title}</h3>
 		<p>{description}</p>

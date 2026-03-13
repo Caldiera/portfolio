@@ -1,0 +1,9 @@
+@use './variables' as *;
+
+:export {
+	frostedVeryLight: #{$color-frosted-very-light};
+	frostedLight: #{$color-frosted-light};
+	frostedMedium: #{$color-frosted-medium};
+	frostedDark: #{$color-frosted-dark};
+	frostedVeryDark: #{$color-frosted-very-dark};
+}
