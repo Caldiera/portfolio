@@ -15,7 +15,7 @@
 	<div class="card">
 		<h3>{title}</h3>
 		<p>{description}</p>
-		<FrostedBackground background={colors.frostedDark}>
+		<FrostedBackground background={colors.frostedMedium} padding="xs">
 			<a href={link} class="btn">View Project</a>
 		</FrostedBackground>
 	</div>

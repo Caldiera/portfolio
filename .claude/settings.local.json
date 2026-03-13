@@ -8,7 +8,8 @@
       "Bash(do echo:*)",
       "Read(//c/dev/portfolio/src/routes/projects/$f/**)",
       "Bash(done)",
-      "Bash(git -C C:/dev/portfolio diff HEAD)"
+      "Bash(git -C C:/dev/portfolio diff HEAD)",
+      "Bash(cd \"C:/dev/portfolio\" && npm run check 2>&1)"
     ]
   }
 }

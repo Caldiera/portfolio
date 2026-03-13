@@ -1,33 +1,6 @@
 <script lang="ts">
 	import ProjectCard from '$components/ProjectCard.svelte';
-
-	const projects = [
-		{
-			title: 'Presentation Engine',
-			description: '',
-			link: '/projects/presentation-engine'
-		},
-		{
-			title: 'Ectocloud',
-			description: '',
-			link: '/projects/ectocloud'
-		},
-		{
-			title: 'Canadian Telecom',
-			description: '',
-			link: '/projects/canadian-telecom'
-		},
-		{
-			title: 'On the Side',
-			description: '',
-			link: '/projects/on-the-side'
-		},
-		{
-			title: 'Google',
-			description: '',
-			link: '/projects/google'
-		}
-	];
+	import { projects } from '$lib/projects';
 </script>
 
 <svelte:head>
@@ -39,7 +12,7 @@
 	<p class="subtitle">A collection of things I've built.</p>
 	<div class="grid">
 		{#each projects as project}
-			<ProjectCard title={project.title} description={project.description} link={project.link} />
+			<ProjectCard title={project.title} description={project.description} link={`/projects/${project.slug}`} />
 		{/each}
 	</div>
 </section>
