@@ -1,5 +1,7 @@
 <script lang="ts">
+	import FrostedBackground from '$components/FrostedBackground.svelte';
 	import type { Project } from '$lib/projects';
+	import colors from '$styles/_variables.module.scss';
 
 	interface Props {
 		data: { project: Project };
@@ -17,20 +19,27 @@
 	<h1>{project.title}</h1>
 
 	{#if project.tags.length > 0}
-		<ul class="tags">
-			{#each project.tags as tag}
-				<li>{tag}</li>
-			{/each}
-		</ul>
+		<div class="tags-wrapper">
+			<FrostedBackground background={colors.frostedMedium} padding="sm">
+				<ul class="tags">
+					{#each project.tags as tag}
+						<FrostedBackground background={colors.frostedMedium} padding="xs">
+							<li>{tag}</li>
+						</FrostedBackground>
+					{/each}
+				</ul>
+			</FrostedBackground>
+		</div>
 	{/if}
+	<FrostedBackground background={colors.tertiaryDark} padding="md">
+		{#if project.description}
+			<p class="description">{project.description}</p>
+		{/if}
 
-	{#if project.description}
-		<p class="description">{project.description}</p>
-	{/if}
-
-	{#if project.body}
-		<div class="body">{project.body}</div>
-	{/if}
+		{#if project.body}
+			<div class="body">{project.body}</div>
+		{/if}
+	</FrostedBackground>
 
 	{#if project.externalLink}
 		<a href={project.externalLink} class="btn" target="_blank" rel="noopener noreferrer">
@@ -44,8 +53,13 @@
 
 	h1 {
 		font-size: clamp(1.75rem, 4vw, 2.5rem);
-		color: $color-text-dark;
+		color: $color-primary;
 		margin-bottom: 1rem;
+	}
+
+	.tags-wrapper {
+		width: fit-content;
+		margin-bottom: 1.5rem;
 	}
 
 	.tags {
@@ -54,7 +68,7 @@
 		gap: 0.5rem;
 		list-style: none;
 		padding: 0;
-		margin: 0 0 1.5rem;
+		margin: 0;
 
 		li {
 			background: $color-primary;

@@ -12,7 +12,7 @@
 	<p class="subtitle">A collection of things I've built.</p>
 	<div class="grid">
 		{#each projects as project}
-			<ProjectCard title={project.title} description={project.description} link={`/projects/${project.slug}`} />
+			<ProjectCard title={project.title} description={project.description} link={`/projects/${project.slug}`} buttonText={project.buttonText} />
 		{/each}
 	</div>
 </section>

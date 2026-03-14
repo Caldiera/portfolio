@@ -9,7 +9,9 @@
       "Read(//c/dev/portfolio/src/routes/projects/$f/**)",
       "Bash(done)",
       "Bash(git -C C:/dev/portfolio diff HEAD)",
-      "Bash(cd \"C:/dev/portfolio\" && npm run check 2>&1)"
+      "Bash(cd \"C:/dev/portfolio\" && npm run check 2>&1)",
+      "Bash(node -e \"const sass = require\\('sass'\\); console.log\\(sass.info\\)\")",
+      "Bash(npm run:*)"
     ]
   }
 }

@@ -1,16 +1,41 @@
-// Colors — light, warm, eva.town-inspired
-$color-bg: #faf8f4;
-$color-text: #111111;
-$color-text-muted: #888888;
-$color-text-mid: #444444;
-$color-text-dark: #111111;
-$color-border: #e0dbd0;
-$color-border-light: #ede9e2;
-$color-accent: #c0392b;
-$color-accent-dark: #96281b;
-$color-primary: #c0392b;
-$color-primary-dark: #96281b;
+@use 'sass:color';
+
+// Palette
+$color-gun-powder: #3c3e59;
+$color-bismark: #426d7d;
+$color-zen-green: #6d9886;
+$color-oyster: #d9cab3;
+$color-rustic-mauve: #ad716f;
 $color-white: #ffffff;
+$color-grey: rgb(15, 15, 15);
+
+// Colors
+$color-bg: $color-grey;
+
+$color-text: $color-white;
+$color-text-muted: color.adjust($color-oyster, $lightness: -20%);
+$color-text-mid: color.adjust($color-oyster, $lightness: -10%);
+$color-text-dark: $color-oyster;
+
+$color-border: #c5b49c;
+$color-border-light: #d0bfa8;
+
+$color-accent: $color-rustic-mauve;
+$color-accent-light: color.adjust($color-rustic-mauve, $lightness: 15%);
+$color-accent-dark: color.adjust($color-rustic-mauve, $lightness: -15%);
+
+$color-primary: $color-rustic-mauve;
+$color-primary-light: color.adjust($color-rustic-mauve, $lightness: 15%);
+$color-primary-dark: color.adjust($color-rustic-mauve, $lightness: -15%);
+
+$color-secondary: $color-bismark;
+$color-secondary-light: color.adjust($color-bismark, $lightness: 15%);
+$color-secondary-dark: color.adjust($color-bismark, $lightness: -15%);
+
+$color-tertiary: $color-zen-green;
+$color-tertiary-light: color.adjust($color-zen-green, $lightness: 15%);
+$color-tertiary-dark: color.adjust($color-zen-green, $lightness: -15%);
+
 $color-frosted-very-light: rgba(0, 0, 0, 0.02);
 $color-frosted-light: rgba(0, 0, 0, 0.05);
 $color-frosted-medium: rgba(0, 0, 0, 0.25);

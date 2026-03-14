@@ -1,6 +1,37 @@
 @use './variables' as *;
 
 :export {
+	// Palette
+	gunPowder: #{$color-gun-powder};
+	bismark: #{$color-bismark};
+	zenGreen: #{$color-zen-green};
+	oyster: #{$color-oyster};
+	rusticMauve: #{$color-rustic-mauve};
+	grey: #{$color-grey};
+
+	// Semantic
+	bg: #{$color-bg};
+	text: #{$color-text};
+	textMuted: #{$color-text-muted};
+	textMid: #{$color-text-mid};
+	textDark: #{$color-text-dark};
+	border: #{$color-border};
+	borderLight: #{$color-border-light};
+	accent: #{$color-accent};
+	accentLight: #{$color-accent-light};
+	accentDark: #{$color-accent-dark};
+	primary: #{$color-primary};
+	primaryLight: #{$color-primary-light};
+	primaryDark: #{$color-primary-dark};
+	secondary: #{$color-secondary};
+	secondaryLight: #{$color-secondary-light};
+	secondaryDark: #{$color-secondary-dark};
+	tertiary: #{$color-tertiary};
+	tertiaryLight: #{$color-tertiary-light};
+	tertiaryDark: #{$color-tertiary-dark};
+	white: #{$color-white};
+
+	// Frosted
 	frostedVeryLight: #{$color-frosted-very-light};
 	frostedLight: #{$color-frosted-light};
 	frostedMedium: #{$color-frosted-medium};

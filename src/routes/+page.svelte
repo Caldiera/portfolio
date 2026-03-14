@@ -6,21 +6,23 @@
 
 	const featured = [
 		{
-			title: 'Block Zero Presentation Engine',
-			description:
-				'I performed regular improvements and built entire apps based on the platform. Tying the physical and digital worlds together.',
-			link: 'https://blockzero.se/presentation-engine/'
+			title: "Interesting projects I've worked on",
+			link: './projects',
+			description: "Collection of the most interesting projects that i'm the most proud of",
+			buttonText: 'See Projects'
 		},
 		{
-			title: 'Task Manager',
-			description: 'A full-stack task management tool with auth, drag-and-drop, and team support.',
-			link: '#'
+			title: '3D Projects ',
+			description: 'I like to design stuff in my spare time. Here is where I can show it off',
+			link: './3d',
+			buttonText: 'See Some 3D '
 		},
 		{
 			title: 'Markdown Blog',
 			description:
 				'A statically generated blog that renders markdown files with syntax highlighting.',
-			link: '#'
+			link: '#',
+			buttonText: 'View Project'
 		}
 	];
 </script>
@@ -56,10 +58,16 @@
 
 <!-- Featured Projects -->
 <section class="featured">
-	<h2>Featured Projects</h2>
+	<h2>Things I like to do:</h2>
 	<div class="grid">
 		{#each featured as project}
-			<ProjectCard title={project.title} description={project.description} link={project.link} />
+			<ProjectCard
+				key={project.title}
+				title={project.title}
+				description={project.description}
+				link={project.link}
+				buttonText={project.buttonText}
+			/>
 		{/each}
 	</div>
 </section>
