@@ -17,18 +17,16 @@
 	</div>
 </section>
 
-<style lang="scss">
-	@use '../../styles/variables' as *;
-
+<style>
 	h1 {
 		font-size: clamp(1.75rem, 4vw, 2.5rem);
-		color: $color-text-dark;
+		color: var(--color-text-dark);
 		margin-bottom: 0.5rem;
 	}
 
 	.subtitle {
-		color: $color-text-muted;
-		margin-bottom: $padding-y;
+		color: var(--color-text-muted);
+		margin-bottom: var(--padding-y);
 	}
 
 	.grid {

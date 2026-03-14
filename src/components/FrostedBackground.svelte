@@ -14,9 +14,7 @@
 	{@render children()}
 </div>
 
-<style lang="scss">
-	@use '../styles/variables' as *;
-
+<style>
 	.frosted {
 		border-radius: 16px;
 		box-shadow:
@@ -25,7 +23,7 @@
 			inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
-		transition: box-shadow $transition-fast;
+		transition: box-shadow var(--transition-fast);
 
 		&.xs { padding: 0.25rem; }
 		&.sm { padding: 0.75rem; }

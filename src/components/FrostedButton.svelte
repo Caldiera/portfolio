@@ -18,15 +18,13 @@
 	</FrostedBackground>
 </a>
 
-<style lang="scss">
-	@use '../styles/variables' as *;
-
+<style>
 	.frosted-button {
 		display: inline-block;
 		text-align: center;
 		text-decoration: none;
-		color: $color-text;
-		font-family: $font-heading;
+		color: var(--color-text);
+		font-family: var(--font-heading);
 		font-size: 0.85rem;
 		letter-spacing: 0.05em;
 		box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);

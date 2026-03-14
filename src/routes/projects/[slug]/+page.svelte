@@ -48,12 +48,10 @@
 	{/if}
 </section>
 
-<style lang="scss">
-	@use '../../../styles/variables' as *;
-
+<style>
 	h1 {
 		font-size: clamp(1.75rem, 4vw, 2.5rem);
-		color: $color-primary;
+		color: var(--color-primary);
 		margin-bottom: 1rem;
 	}
 
@@ -71,22 +69,22 @@
 		margin: 0;
 
 		li {
-			background: $color-primary;
-			color: $color-white;
+			background: var(--color-primary);
+			color: var(--color-white);
 			padding: 0.25rem 0.75rem;
-			border-radius: $radius-sm;
+			border-radius: var(--radius-sm);
 			font-size: 0.8rem;
 		}
 	}
 
 	.description {
-		color: $color-text-muted;
+		color: var(--color-text-muted);
 		font-size: 1.1rem;
 		margin-bottom: 1.5rem;
 	}
 
 	.body {
-		color: $color-text-dark;
+		color: var(--color-text-dark);
 		line-height: 1.7;
 		margin-bottom: 2rem;
 	}
@@ -94,14 +92,14 @@
 	.btn {
 		display: inline-block;
 		padding: 0.6rem 1.25rem;
-		background: $color-primary;
-		color: $color-white;
-		border-radius: $radius-sm;
+		background: var(--color-primary);
+		color: var(--color-white);
+		border-radius: var(--radius-sm);
 		text-decoration: none;
-		transition: background $transition-fast;
+		transition: background var(--transition-fast);
 
 		&:hover {
-			background: $color-primary-dark;
+			background: var(--color-primary-dark);
 		}
 	}
 </style>

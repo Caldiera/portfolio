@@ -72,9 +72,7 @@
 	</div>
 </section>
 
-<style lang="scss">
-	@use '../styles/variables' as *;
-
+<style>
 	.hero {
 		padding: 4rem 0 3rem;
 		display: flex;
@@ -82,29 +80,30 @@
 		gap: 1rem;
 		height: 80vh;
 	}
+
 	.big-name-wrapper {
 		margin-bottom: 10rem;
 	}
 
 	.tagline {
 		font-size: 1.2rem;
-		color: $color-text-muted;
+		color: var(--color-text-muted);
 	}
 
 	.cta {
 		display: inline-block;
 		margin-top: 0.5rem;
 		padding: 0.65rem 1.5rem;
-		background: $color-primary;
-		color: $color-white;
-		border-radius: $radius-md;
+		background: var(--color-primary);
+		color: var(--color-white);
+		border-radius: var(--radius-md);
 		font-size: 1rem;
 		text-decoration: none;
 		align-self: flex-start;
-		transition: background $transition-fast;
+		transition: background var(--transition-fast);
 
 		&:hover {
-			background: $color-primary-dark;
+			background: var(--color-primary-dark);
 			text-decoration: none;
 		}
 	}
@@ -113,11 +112,11 @@
 		h2 {
 			font-size: 1.5rem;
 			margin-bottom: 1rem;
-			color: $color-text-dark;
+			color: var(--color-text-dark);
 		}
 
 		p {
-			color: $color-text-mid;
+			color: var(--color-text-mid);
 			max-width: 65ch;
 			line-height: 1.75;
 		}
@@ -128,14 +127,14 @@
 	}
 
 	.featured {
-		padding: $padding-y 0;
-		border-top: 1px solid $color-border-light;
+		padding: var(--padding-y) 0;
+		border-top: 1px solid var(--color-border-light);
 		margin: 5rem 0;
 
 		h2 {
 			font-size: 3rem;
 			margin-bottom: 1.5rem;
-			color: $color-text-dark;
+			color: var(--color-text-dark);
 		}
 	}
 

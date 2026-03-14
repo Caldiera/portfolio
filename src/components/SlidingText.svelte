@@ -51,9 +51,7 @@
 	<h1 style="transform: translateX({translateX}vw)">{text}</h1>
 </div>
 
-<style lang="scss">
-	@use '../styles/variables' as *;
-
+<style>
 	.wrapper {
 		position: relative;
 		left: 50%;
@@ -64,7 +62,7 @@
 
 	h1 {
 		font-size: clamp(6rem, 20vw, 15rem);
-		color: $color-text;
+		color: var(--color-text);
 		font-weight: bold;
 		line-height: 1;
 		letter-spacing: -0.02em;

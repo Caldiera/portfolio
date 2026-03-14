@@ -8,32 +8,30 @@
 	<a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
 </footer>
 
-<style lang="scss">
-	@use '../styles/variables' as *;
-
+<style>
 	footer {
 		text-align: center;
-		padding: $padding-y $padding-x;
-		border-top: 1px solid $color-border;
+		padding: var(--padding-y) var(--padding-x);
+		border-top: 1px solid var(--color-border);
 		font-size: 0.875rem;
-		color: $color-text-muted;
+		color: var(--color-text-muted);
 		display: flex;
 		flex-direction: column;
 		gap: 0.35rem;
 		align-items: center;
 
 		a {
-			color: $color-text-muted;
+			color: var(--color-text-muted);
 			font-size: 0.8rem;
 
 			&:hover {
-				color: $color-primary;
+				color: var(--color-primary);
 			}
 		}
 	}
 
 	.name {
 		font-weight: 600;
-		color: $color-text-sub;
+		color: var(--color-text-dark);
 	}
 </style>

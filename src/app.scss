@@ -1,5 +1,73 @@
 @use 'styles/variables' as *;
 
+:root {
+	// Palette
+	--color-gun-powder: #{$color-gun-powder};
+	--color-bismark: #{$color-bismark};
+	--color-zen-green: #{$color-zen-green};
+	--color-oyster: #{$color-oyster};
+	--color-rustic-mauve: #{$color-rustic-mauve};
+	--color-white: #{$color-white};
+	--color-grey: #{$color-grey};
+
+	// Text
+	--color-text: #{$color-text};
+	--color-text-muted: #{$color-text-muted};
+	--color-text-mid: #{$color-text-mid};
+	--color-text-dark: #{$color-text-dark};
+
+	// Border
+	--color-border: #{$color-border};
+	--color-border-light: #{$color-border-light};
+
+	// Accent
+	--color-accent: #{$color-accent};
+	--color-accent-light: #{$color-accent-light};
+	--color-accent-dark: #{$color-accent-dark};
+
+	// Primary
+	--color-primary: #{$color-primary};
+	--color-primary-light: #{$color-primary-light};
+	--color-primary-dark: #{$color-primary-dark};
+
+	// Secondary
+	--color-secondary: #{$color-secondary};
+	--color-secondary-light: #{$color-secondary-light};
+	--color-secondary-dark: #{$color-secondary-dark};
+
+	// Tertiary
+	--color-tertiary: #{$color-tertiary};
+	--color-tertiary-light: #{$color-tertiary-light};
+	--color-tertiary-dark: #{$color-tertiary-dark};
+
+	// Frosted
+	--color-frosted-very-light: #{$color-frosted-very-light};
+	--color-frosted-light: #{$color-frosted-light};
+	--color-frosted-medium: #{$color-frosted-medium};
+	--color-frosted-dark: #{$color-frosted-dark};
+	--color-frosted-very-dark: #{$color-frosted-very-dark};
+	--color-frosted-very-dark-gray: #{$color-frosted-very-dark-gray};
+
+	// Typography
+	--font-stack: #{$font-stack};
+	--font-heading: #{$font-heading};
+	--font-mono: #{$font-mono};
+	--font-serif: #{$font-serif};
+
+	// Spacing
+	--max-width: #{$max-width};
+	--padding-x: #{$padding-x};
+	--padding-y: #{$padding-y};
+
+	// Radii
+	--radius-sm: #{$radius-sm};
+	--radius-md: #{$radius-md};
+	--radius-lg: #{$radius-lg};
+
+	// Transitions
+	--transition-fast: #{$transition-fast};
+}
+
 *,
 *::before,
 *::after {
@@ -8,17 +76,15 @@
 	padding: 0;
 }
 
-
-
 html,
 body {
 	overflow-x: hidden;
 }
 
 body {
-	font-family: $font-stack;
+	font-family: var(--font-stack);
 	line-height: 1.6;
-	color: #ffffff;
+	color: var(--color-text);
 	background-image: url('lib/images/background4.jpg');
 	background-size: cover;
 	background-position: center;
@@ -27,23 +93,23 @@ body {
 }
 
 main {
-	max-width: $max-width;
+	max-width: var(--max-width);
 	margin: 0 auto;
-	padding: $padding-y $padding-x;
+	padding: var(--padding-y) var(--padding-x);
 }
 
 a {
-	color: #ffffff;
+	color: var(--color-text);
 	text-decoration: none;
 
 	&:hover {
-		color: $color-accent;
+		color: var(--color-accent);
 	}
 }
 
 h1,
 h2,
 h3 {
-	font-family: $font-heading;
+	font-family: var(--font-heading);
 	line-height: 1.25;
 }

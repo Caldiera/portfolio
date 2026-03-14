@@ -6,23 +6,21 @@
 	</ul>
 </nav>
 
-<style lang="scss">
-	@use '../styles/variables' as *;
-
+<style>
 	nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 1rem $padding-x;
-		border-bottom: 1px solid $color-border;
-		max-width: $max-width;
+		padding: 1rem var(--padding-x);
+		border-bottom: 1px solid var(--color-border);
+		max-width: var(--max-width);
 		margin: 0 auto;
 	}
 
 	.brand {
 		font-weight: 700;
 		font-size: 1.25rem;
-		color: $color-text;
+		color: var(--color-text);
 		text-decoration: none;
 	}
 
@@ -32,13 +30,13 @@
 		list-style: none;
 
 		a {
-			color: $color-text-mid;
+			color: var(--color-text-mid);
 			font-size: 0.95rem;
 			text-decoration: none;
-			transition: color $transition-fast;
+			transition: color var(--transition-fast);
 
 			&:hover {
-				color: $color-primary;
+				color: var(--color-primary);
 			}
 		}
 	}
