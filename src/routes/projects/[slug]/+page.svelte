@@ -51,7 +51,7 @@
 <style>
 	h1 {
 		font-size: clamp(1.75rem, 4vw, 2.5rem);
-		color: var(--color-primary);
+		color: var(--color-text-muted);
 		margin-bottom: 1rem;
 	}
 
