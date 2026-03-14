@@ -31,7 +31,7 @@
 			</FrostedBackground>
 		</div>
 	{/if}
-	<FrostedBackground background={colors.tertiaryDark} padding="md">
+	<FrostedBackground background={colors.frostedMedium} padding="md">
 		{#if project.description}
 			<p class="description">{project.description}</p>
 		{/if}
@@ -69,7 +69,6 @@
 		margin: 0;
 
 		li {
-			background: var(--color-primary);
 			color: var(--color-white);
 			padding: 0.25rem 0.75rem;
 			border-radius: var(--radius-sm);
@@ -92,7 +91,6 @@
 	.btn {
 		display: inline-block;
 		padding: 0.6rem 1.25rem;
-		background: var(--color-primary);
 		color: var(--color-white);
 		border-radius: var(--radius-sm);
 		text-decoration: none;
