@@ -53,7 +53,7 @@
 <section class="featured">
 	<h2>Things I like to do:</h2>
 	<div class="card-grid">
-		{#each featured as item}
+		{#each featured as item (item.title)}
 			<ProjectCard
 				title={item.title}
 				description={item.description}
