@@ -8,14 +8,14 @@
 	const featured = [
 		{
 			title: "Interesting projects I've worked on",
-			link: './projects',
+			link: '/projects',
 			description: "Collection of the most interesting projects that i'm the most proud of",
 			buttonText: 'See Projects'
 		},
 		{
 			title: '3D Projects',
 			description: 'I like to design stuff in my spare time. Here is where I can show it off',
-			link: './3d',
+			link: '/3d',
 			buttonText: 'See Some 3D'
 		}
 	];
