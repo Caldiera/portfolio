@@ -8,21 +8,27 @@
 		description: string;
 		link: string;
 		buttonText: string;
+		image?: string;
 	}
 
-	let { title, description, link, buttonText }: Props = $props();
+	let { title, description, link, buttonText, image }: Props = $props();
 </script>
 
 <FrostedBackground background={colors.frostedVeryLight}>
 	<div class="card">
 		<h3>{title}</h3>
+		{#if image}
+			<img src={image} alt={title} class="card-image" />
+		{/if}
 		<p>{description}</p>
-		<FrostedButton href={link} background={colors.frostedMedium} padding="xs">{buttonText}</FrostedButton>
+		<FrostedButton href={link} background={colors.frostedMedium} padding="xs"
+			>{buttonText}</FrostedButton
+		>
 	</div>
 </FrostedBackground>
 
 <style lang="scss">
-	@use '../styles/variables' as *;
+	@use 'src/styles/_variables.scss' as *;
 
 	.card {
 		display: flex;
@@ -38,6 +44,13 @@
 			font-size: 0.9rem;
 			color: rgba(255, 255, 255, 0.75);
 			flex: 1;
+		}
+
+		.card-image {
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			object-fit: cover;
+			border-radius: $radius-sm;
 		}
 	}
 </style>
