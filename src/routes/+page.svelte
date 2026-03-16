@@ -16,13 +16,6 @@
 			description: 'I like to design stuff in my spare time. Here is where I can show it off',
 			link: './3d',
 			buttonText: 'See Some 3D'
-		},
-		{
-			title: 'Markdown Blog',
-			description:
-				'A statically generated blog that renders markdown files with syntax highlighting.',
-			link: '#',
-			buttonText: 'View Project'
 		}
 	];
 </script>
