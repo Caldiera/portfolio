@@ -7,12 +7,13 @@
 		children: Snippet;
 		background?: string;
 		padding?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+		target?: string;
 	}
 
-	let { href, children, background = 'rgba(0, 0, 0, 0.05)', padding = 'sm' }: Props = $props();
+	let { href, children, background = 'rgba(0, 0, 0, 0.05)', padding = 'sm', target }: Props = $props();
 </script>
 
-<a {href} class="frosted-button">
+<a {href} {target} class="frosted-button">
 	<FrostedBackground {background} {padding}>
 		{@render children()}
 	</FrostedBackground>

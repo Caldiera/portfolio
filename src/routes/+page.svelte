@@ -51,6 +51,7 @@
 				title={item.title}
 				description={item.description}
 				link={item.link}
+				buttonIcon="arrow_forward"
 				buttonText={item.buttonText}
 			/>
 		{/each}

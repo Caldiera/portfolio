@@ -11,8 +11,15 @@
 	<h1>Projects</h1>
 	<p class="subtitle">A collection of things I've built.</p>
 	<div class="grid">
-		{#each projects as project}
-			<ProjectCard title={project.title} description={project.description} link={`/projects/${project.slug}`} buttonText={project.buttonText} image={project.image} />
+		{#each projects as project (project.slug)}
+			<ProjectCard
+				title={project.title}
+				description={project.description}
+				buttonIcon="open_in_new"
+				link={`/projects/${project.slug}`}
+				buttonText={project.buttonText}
+				image={project.image}
+			/>
 		{/each}
 	</div>
 </section>
