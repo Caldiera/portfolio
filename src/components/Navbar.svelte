@@ -30,7 +30,7 @@
 		list-style: none;
 
 		a {
-			color: var(--color-text-mid);
+			color: var(--color-text);
 			font-size: 0.95rem;
 			text-decoration: none;
 			transition: color var(--transition-fast);

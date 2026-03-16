@@ -36,6 +36,10 @@
 			<p class="description">{project.description}</p>
 		{/if}
 
+		{#if project.image}
+			<img src={project.image} alt={project.title} class="project-image" />
+		{/if}
+
 		{#if project.body}
 			<div class="body">{project.body}</div>
 		{/if}
@@ -51,7 +55,7 @@
 <style>
 	h1 {
 		font-size: clamp(1.75rem, 4vw, 2.5rem);
-		color: var(--color-text-muted);
+		color: var(--color-white);
 		margin-bottom: 1rem;
 	}
 
@@ -77,13 +81,22 @@
 	}
 
 	.description {
-		color: var(--color-text-muted);
+		color: var(--color-text);
 		font-size: 1.1rem;
 		margin-bottom: 1.5rem;
 	}
 
+	.project-image {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		object-position: center center;
+		border-radius: var(--radius-lg);
+		margin-bottom: 1.5rem;
+	}
+
 	.body {
-		color: var(--color-text-dark);
+		color: var(--color-text);
 		line-height: 1.7;
 		margin-bottom: 2rem;
 	}

@@ -34,6 +34,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
+		height: 100%;
 
 		h3 {
 			font-size: 1.1rem;
@@ -50,7 +51,7 @@
 			width: 100%;
 			aspect-ratio: 16 / 9;
 			object-fit: cover;
-			border-radius: $radius-sm;
+			border-radius: var(--radius-lg);
 		}
 	}
 </style>
