@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProjectCard from '$components/ProjectCard.svelte';
+	import ClickableProjectCard from '$components/ClickableProjectCard.svelte';
 	import { projects } from '$lib/projects';
 </script>
 
@@ -9,15 +9,15 @@
 
 <section>
 	<h1>Projects</h1>
-	<p class="subtitle">A collection of things I've built.</p>
+	<p class="subtitle">Projects I've been a part of during my career</p>
 	<div class="grid">
 		{#each projects as project (project.slug)}
-			<ProjectCard
+			<ClickableProjectCard
 				title={project.title}
 				description={project.description}
-				buttonIcon="open_in_new"
+				buttonIcon="arrow_forward"
 				link={`/projects/${project.slug}`}
-				buttonText={project.buttonText}
+				buttonText="Read More"
 				image={project.image}
 			/>
 		{/each}

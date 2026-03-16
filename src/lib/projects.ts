@@ -25,7 +25,7 @@ export const projects: Project[] = [
 		description:
 			'An interactive storytelling platform using physical tokens and touch displays to explore complex systems and ideas.',
 		tags: ['interactive', 'touch-interface', 'creative-tech', 'software'],
-		externalLink: 'https://blockzero.se',
+		externalLink: 'https://blockzero.se/presentation-engine',
 		image: presentationEngineImg,
 		buttonText: 'Block zero case study',
 		body: 'Presentation Engine™ is an interactive storytelling platform designed to make complex ideas tangible and explorable. Built around a large touchscreen display and physical tokens, the system allows users to directly interact with digital environments by placing and moving objects on the surface.\n\nCustom in-house software detects both the position and identity of each token in real time. This enables a wide range of interactive experiences to be built on top of the platform. For example, placing tokens representing buildings can reveal connections between infrastructure, while vehicle tokens can move through road networks and dynamically illustrate transport systems.\n\nThe platform was designed as a tool for immersive communication — enabling audiences to explore visions, products, or complex systems through tactile interaction rather than passive presentation. By combining physical interaction with digital storytelling, Presentation Engine™ turns presentations into collaborative, exploratory experiences.'
