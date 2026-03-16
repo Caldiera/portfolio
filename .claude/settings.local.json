@@ -12,7 +12,8 @@
       "Bash(cd \"C:/dev/portfolio\" && npm run check 2>&1)",
       "Bash(node -e \"const sass = require\\('sass'\\); console.log\\(sass.info\\)\")",
       "Bash(npm run:*)",
-      "WebFetch(domain:inclusive-components.design)"
+      "WebFetch(domain:inclusive-components.design)",
+      "Bash(npm install:*)"
     ]
   }
 }
