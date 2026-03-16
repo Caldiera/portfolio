@@ -3,7 +3,7 @@
 </script>
 
 <footer>
-	<p class="name">Alex Carter</p>
+	<p class="name">Brandon Marques</p>
 	<p class="copy">&copy; {year} All rights reserved.</p>
 	<a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
 </footer>

@@ -1,5 +1,5 @@
 <nav>
-	<a href="/" class="brand">Alex Carter</a>
+	<a href="/" class="brand">Brandon Marques</a>
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="/projects">Projects</a></li>
