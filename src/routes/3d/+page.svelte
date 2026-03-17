@@ -1,6 +1,11 @@
 <script lang="ts">
 	import StlViewer from '$components/StlViewer.svelte';
 	import test from '$lib/stl/test.stl?url';
+	import desk from '$lib/stl/desk.stl?url';
+	import drawer from '$lib/stl/drawer.stl?url';
+	import coffee1 from '$lib/stl/coffee1.stl?url';
+	import coffee2 from '$lib/stl/coffee2.stl?url';
+	import coffee3 from '$lib/stl/coffee3.stl?url';
 </script>
 
 <svelte:head>
@@ -11,10 +16,11 @@
 	<h1>3D Projects</h1>
 	<p class="subtitle">Things I've designed in my spare time.</p>
 	<div class="grid">
-		<StlViewer src={test} colspan={2} rowspan={2} />
-		<StlViewer src={test} colspan={4} />
-		<StlViewer src={test} colspan={1} />
-		<StlViewer src={test} colspan={1} />
+		<StlViewer src={desk} colspan={3} rowspan={3} description="SLEEK ELEGANT TABLE" />
+		<StlViewer src={drawer} colspan={2} description="Laser cut steel bedside table" />
+		<StlViewer src={coffee1} colspan={3} rowspan={2} description="Coffee table trolley" />
+		<StlViewer src={coffee2} colspan={1} />
+		<StlViewer src={coffee3} colspan={1} />
 	</div>
 </section>
 

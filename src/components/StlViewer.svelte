@@ -8,9 +8,10 @@
 		color?: string;
 		colspan?: number;
 		rowspan?: number;
+		description?: string;
 	}
 
-	let { src, color = '#ad716f', colspan = 1, rowspan = 1 }: Props = $props();
+	let { src, color = '#ffffff', colspan = 1, rowspan = 1, description }: Props = $props();
 
 	let container: HTMLDivElement;
 	let canvas: HTMLCanvasElement;
@@ -96,11 +97,15 @@
 	style="grid-column: span {colspan}; grid-row: span {rowspan}; aspect-ratio: {colspan} / {rowspan};"
 	bind:this={container}
 >
+	{#if description}
+		<p class="description">{description}</p>
+	{/if}
 	<canvas bind:this={canvas}></canvas>
 </div>
 
 <style>
 	.viewer {
+		position: relative;
 		width: 100%;
 		border-radius: var(--radius-lg);
 		overflow: hidden;
@@ -116,6 +121,19 @@
 			display: block;
 			width: 100%;
 			height: 100%;
+		}
+
+		.description {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			margin: 0;
+			padding: 0.75rem 1rem;
+			color: #ffffff;
+			font-size: 0.875rem;
+			pointer-events: none;
 		}
 	}
 </style>
