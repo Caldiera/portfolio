@@ -1,6 +1,8 @@
 <script lang="ts">
 	import ClickableProjectCard from '$components/ClickableProjectCard.svelte';
+	import FrostedButton from '$components/FrostedButton.svelte';
 	import { projects } from '$lib/projects';
+	import colors from '$styles/_variables.module.scss';
 </script>
 
 <svelte:head>
@@ -8,6 +10,14 @@
 </svelte:head>
 
 <section>
+	<div class="back">
+		<FrostedButton href="/" background={colors.frostedMedium} padding="xs">
+			<span class="btn-content">
+				<span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+				Back to Home
+			</span>
+		</FrostedButton>
+	</div>
 	<h1>Projects</h1>
 	<p class="subtitle">Projects I've been a part of during my career</p>
 	<div class="grid">
@@ -25,6 +35,23 @@
 </section>
 
 <style>
+	.back {
+		width: fit-content;
+		position: relative;
+		top: -1.5rem;
+	}
+
+	.btn-content {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+
+		.material-symbols-rounded {
+			font-size: 1rem;
+			line-height: 1;
+		}
+	}
+
 	h1 {
 		font-size: clamp(1.75rem, 4vw, 2.5rem);
 		color: var(--color-text-dark);
