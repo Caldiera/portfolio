@@ -3,15 +3,23 @@
 	import { STLLoader } from 'three/examples/jsm/loaders/STLLoader.js';
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+	interface Rotation {
+		x?: number;
+		y?: number;
+		z?: number;
+	}
+
 	interface Props {
 		src: string;
 		color?: string;
 		colspan?: number;
 		rowspan?: number;
 		description?: string;
+		rotation?: Rotation;
 	}
 
-	let { src, color = '#ffffff', colspan = 1, rowspan = 1, description }: Props = $props();
+	let { src, color = '#ffffff', colspan = 1, rowspan = 1, description, rotation }: Props =
+		$props();
 
 	let container: HTMLDivElement;
 	let canvas: HTMLCanvasElement;
@@ -56,6 +64,12 @@
 
 			const material = new THREE.MeshStandardMaterial({ color });
 			const mesh = new THREE.Mesh(geometry, material);
+			const deg = Math.PI / 180;
+			mesh.rotation.set(
+				(rotation?.x ?? 0) * deg,
+				(rotation?.y ?? 0) * deg,
+				(rotation?.z ?? 0) * deg
+			);
 			scene.add(mesh);
 
 			// Fit camera to model
