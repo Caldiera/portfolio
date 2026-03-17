@@ -13,7 +13,10 @@
       "Bash(node -e \"const sass = require\\('sass'\\); console.log\\(sass.info\\)\")",
       "Bash(npm run:*)",
       "WebFetch(domain:inclusive-components.design)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "WebSearch",
+      "WebFetch(domain:render.com)",
+      "WebFetch(domain:svelte.dev)"
     ]
   }
 }
